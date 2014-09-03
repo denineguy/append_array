@@ -8,7 +8,7 @@ def append3(ary, n)
 end
 
 
-def append2(ary, n) # this does not capture 0
+def append2(ary, n)
   ary = []
   n = 5
   unless n < 0
