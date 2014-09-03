@@ -1,3 +1,6 @@
+#create a method that no matter what number you enter returns an array
+#of numbers decrementing by 1 down to 0
+
 def append3(ary, n)
   n.downto(0) { |n| ary << n }
   ary
@@ -5,11 +8,11 @@ def append3(ary, n)
 end
 
 
-def append2(ary, n)
+def append2(ary, n) # this does not capture 0
   ary = []
   n = 5
   unless n < 0
-    n.times do 
+    (n+1).times do 
       ary << n 
       n = n - 1
     end
